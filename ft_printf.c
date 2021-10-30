@@ -35,6 +35,15 @@ void	ft_handle_letter(char c, t_printf *print)
 	{
 		ft_print_p(print);
 	}
+	else if (c == 'x' || c == 'X')
+	{
+		if (c == 'x')
+		{
+			ft_print_x_min(print);
+		}
+		else
+			ft_print_x_maj(print);
+	}
 }
 
 void	ft_parse_letter(const char *str, t_printf *print)
@@ -51,7 +60,7 @@ void	ft_parse_letter(const char *str, t_printf *print)
 		}
 		else
 			ft_putchar(str[i], print);
-			++i;
+			i++;
 	}
 }
 
@@ -67,8 +76,7 @@ int	ft_printf(const char *format, ...)
 	return (print.i);
 }
 
-int main()
+/* int main()
 {
 	printf("%d", ft_printf("alexia %s", "tes trop belle"));
-	printf("%d", ft_printf("alexia %s", "tes trop belle"));
-}
+} */
