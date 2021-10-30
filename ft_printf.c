@@ -27,7 +27,7 @@ void	ft_handle_letter(char c, t_printf *print)
 	{
 		ft_print_s(print);
 	}
-		else if (c == 'd' || c == 'i')
+	else if (c == 'd' || c == 'i')
 	{
 		ft_print_di(print);
 	}
@@ -35,25 +35,23 @@ void	ft_handle_letter(char c, t_printf *print)
 	{
 		ft_print_p(print);
 	}
-	print->i++;
 }
 
 void	ft_parse_letter(const char *str, t_printf *print)
 {
-	while (*str)
+	int i;
+
+	i = 0;
+	while (str[i])
 	{
-		if (*str == '%')
+		if (str[i] == '%')
 		{
-			str++;
-			if (ft_check_letter(*str))
-			{
-				ft_handle_letter(*str, print);
-				str++;
-			}
+			++i;
+			ft_handle_letter(str[i], print);
 		}
 		else
-			ft_putchar(*str, print);
-			str++;
+			ft_putchar(str[i], print);
+			++i;
 	}
 }
 
@@ -69,3 +67,8 @@ int	ft_printf(const char *format, ...)
 	return (print.i);
 }
 
+int main()
+{
+	printf("%d", ft_printf("alexia %s", "tes trop belle"));
+	printf("%d", ft_printf("alexia %s", "tes trop belle"));
+}

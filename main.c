@@ -6,11 +6,11 @@
 /*   By: agondard <agondard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/30 13:41:13 by agondard          #+#    #+#             */
-/*   Updated: 2021/10/30 13:41:15 by agondard         ###   ########.fr       */
+/*   Updated: 2021/10/30 15:44:24 by agondard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+/* #include "ft_printf.h"
 #include <stdio.h>
 #include <limits.h>
 
@@ -334,4 +334,5 @@ int main(void)
 
 	atexit(checkLeaks);
 	return (0);
-}
+} */
+
