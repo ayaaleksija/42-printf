@@ -6,12 +6,11 @@
 /*   By: agondard <agondard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/30 01:22:28 by agondard          #+#    #+#             */
-/*   Updated: 2021/10/30 11:26:17 by agondard         ###   ########.fr       */
+/*   Updated: 2021/10/30 14:15:06 by agondard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-
 
 
 void	ft_putnbr_base(int nbr, char *base, t_printf *print)

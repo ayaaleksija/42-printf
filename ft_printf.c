@@ -46,7 +46,10 @@ void	ft_parse_letter(const char *str, t_printf *print)
 		{
 			str++;
 			if (ft_check_letter(*str))
+			{
 				ft_handle_letter(*str, print);
+				str++;
+			}
 		}
 		else
 			ft_putchar(*str, print);
