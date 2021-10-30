@@ -16,25 +16,15 @@
 void	ft_handle_letter(char c, t_printf *print)
 {
 	if (c == 'c')
-	{
 		ft_print_c(print);
-	}
 	else if (c == '%')
-	{
 		ft_putchar('%', print);
-	}
 	else if (c == 's')
-	{
 		ft_print_s(print);
-	}
 	else if (c == 'd' || c == 'i')
-	{
 		ft_print_di(print);
-	}
 	else if (c == 'p')
-	{
 		ft_print_p(print);
-	}
 	else if (c == 'x' || c == 'X')
 	{
 		if (c == 'x')
