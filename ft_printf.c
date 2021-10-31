@@ -34,6 +34,8 @@ void	ft_handle_letter(char c, t_printf *print)
 		else
 			ft_print_x_maj(print);
 	}
+	else if (c == 'u')
+		ft_print_u(print);
 }
 
 void	ft_parse_letter(const char *str, t_printf *print)
