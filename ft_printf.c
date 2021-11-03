@@ -40,7 +40,7 @@ void	ft_handle_letter(char c, t_printf *print)
 
 void	ft_parse_letter(const char *str, t_printf *print)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (str[i])
@@ -52,7 +52,7 @@ void	ft_parse_letter(const char *str, t_printf *print)
 		}
 		else
 			ft_putchar(str[i], print);
-			i++;
+		i++;
 	}
 }
 
@@ -67,8 +67,3 @@ int	ft_printf(const char *format, ...)
 	va_end(print.list);
 	return (print.i);
 }
-
-/* int main()
-{
-	printf("%d", ft_printf("alexia %s", "tes trop belle"));
-} */
