@@ -16,6 +16,7 @@
 /* INCLUDES */
 // utilisation de va
 # include <stdarg.h>
+
 // utilisation de write
 # include <unistd.h>
 # include <stdlib.h>
@@ -35,7 +36,7 @@ typedef struct s_printf
 int		ft_printf(const char *str, ...);
 
 /* TOOLS */
-void ft_parse_letter(const char *str, t_printf *print);
+void	ft_parse_letter(const char *str, t_printf *print);
 void	ft_print_c(t_printf *print);
 void	ft_print_di(t_printf *print);
 void	ft_print_s(t_printf *print);
@@ -50,4 +51,4 @@ void	ft_putnbr_base_p(uintptr_t nbr, char *base, t_printf *print);
 void	ft_putstr(char *str, t_printf *print);
 int		len(char *str);
 
-#endif /* FT_PRINTF_H */
+#endif 

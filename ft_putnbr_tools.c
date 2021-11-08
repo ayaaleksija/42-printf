@@ -6,7 +6,7 @@
 /*   By: agondard <agondard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/30 01:22:28 by agondard          #+#    #+#             */
-/*   Updated: 2021/11/03 13:42:29 by agondard         ###   ########.fr       */
+/*   Updated: 2021/11/08 15:03:39 by agondard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,14 +29,20 @@ void	ft_putnbr_base(int nbr, char *base, t_printf *print)
 
 void	ft_putnbr_base_unsigned(unsigned int nbr, char *base, t_printf *print)
 {
-	if (nbr >= len(base))
-		ft_putnbr_base(nbr / len(base), base, print);
-	ft_putchar(base[nbr % len(base)], print);
+	unsigned long	size;
+
+	size = len(base);
+	if (nbr >= size)
+		ft_putnbr_base(nbr / size, base, print);
+	ft_putchar(base[nbr % size], print);
 }
 
 void	ft_putnbr_base_p(uintptr_t nbr, char *base, t_printf *print)
 {
-	if (nbr >= len(base))
-		ft_putnbr_base_p(nbr / len(base), base, print);
-	ft_putchar(base[nbr % len(base)], print);
+	uintptr_t	size;
+
+	size = len(base);
+	if (nbr >= size)
+		ft_putnbr_base_p(nbr / size, base, print);
+	ft_putchar(base[nbr % size], print);
 }
